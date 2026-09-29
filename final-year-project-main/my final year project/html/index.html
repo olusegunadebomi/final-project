@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/navigation.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -13,17 +14,7 @@
 <body>
   <div class="container">
     <div class="header">
-      <div class="nav">
-        <div class="logo"><img src="../images/logo.png" alt=""></div>
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="admission.html">Admission Information</a></li>
-            <li><a href="new.html">News</a></li>
-            <li><a href="../html/signup.html">contact</a></li>
-          </ul>
-        </nav>
-      </div>
+      <div data-site-nav></div>
       <div class="header-container">
         <div class="header-image-container">
           <img src="../images/students.jpg" alt="">
@@ -38,7 +29,7 @@
             accessing resources and connecting with advisors, this system is your gateway to personalized support and
             success within our institution. Embrace the convenience and empowerment of our digital advising space as you
             navigate your path towards achievement and growth.
-          <p>
+          </p>
 
         </div>
       </div>
@@ -105,12 +96,34 @@
       </div>
     </div>
 
-    <div class="footer">
-
-    </div>
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <img src="../images/logo.png" alt="Nnamdi Azikiwe University">
+          <p>Student Web Advising System</p>
+        </div>
+        <div class="footer-links">
+          <h4>Explore</h4>
+          <a href="index.html">Home</a>
+          <a href="admission.html">Admission information</a>
+          <a href="admissionRequirement.html">Admission requirements</a>
+          <a href="new.html">News</a>
+        </div>
+        <div class="footer-contact">
+          <h4>Get in touch</h4>
+          <a href="https://unizik.edu.ng/">Nnamdi Azikiwe University</a>
+          <a href="../html/signup.html">Contact the advising team</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; Nnamdi Azikiwe University</span>
+        <a href="admissionRequirement.html">Admission requirements</a>
+      </div>
+    </footer>
   </div>
 
   <script src="../js/index.js"></script>
+  <script src="../js/site-nav.js"></script>
 </body>
 
 </html>

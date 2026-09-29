@@ -48,7 +48,8 @@ function validation() {
   }
 
   if (regnumber == "") {
-    document.getElementById("regu").innerHTML = "** Please fill the reg/matric number field";
+    document.getElementById("regu").innerHTML =
+      "** Please fill the reg/matric number field";
     return false;
   }
 
@@ -64,8 +65,7 @@ function validation() {
   }
 
   if (pass != confirmpass) {
-    document.getElementById("confrmpass").innerHTML =
-      " ** Password Mismatch";
+    document.getElementById("confrmpass").innerHTML = " ** Password Mismatch";
     return false;
   }
 
@@ -90,4 +90,5 @@ function validation() {
       " ** Mobile Number must be 11 digits only";
     return false;
   }
+  return true;
 }
