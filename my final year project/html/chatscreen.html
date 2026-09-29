@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f3f5f1">
+  <title>Advising conversation | Student Advising</title>
+  <link rel="stylesheet" href="../css/navigation.css">
+  <link rel="stylesheet" href="../css/advising.css">
+  <link rel="stylesheet" href="../css/chatscreen.css">
+</head>
+
+<body class="advising-page">
+  <div data-site-nav></div>
+
+  <main class="advising-main chat-main">
+    <div class="page-path"><a href="index.html">Home</a><span aria-hidden="true">/</span><a
+        href="startchat.html">Student advising</a><span aria-hidden="true">/</span><span>Conversation</span></div>
+
+    <header class="chat-page-heading">
+      <div>
+        <p class="eyebrow">STUDENT ADVISING</p>
+        <h1 id="conversation-title">Your conversation</h1>
+      </div>
+      <a class="new-conversation" href="startchat.html"><span aria-hidden="true">+</span> New conversation</a>
+    </header>
+
+    <div class="chat-layout">
+      <section class="conversation-panel" aria-labelledby="thread-title">
+        <header class="conversation-header">
+          <div class="advisor-avatar" aria-hidden="true">A</div>
+          <div class="conversation-identity">
+            <h2 id="thread-title">Advising desk</h2>
+            <p><span class="demo-dot"></span> Demo conversation</p>
+          </div>
+          <a class="back-link" href="startchat.html">Change topic</a>
+        </header>
+
+        <div class="conversation-notice" role="note">
+          This prototype is not connected to a live adviser. Messages you send are displayed locally on this page only.
+        </div>
+
+        <div class="message-area" id="message-list" aria-live="polite" aria-relevant="additions text">
+          <div class="thread-empty" id="thread-empty">
+            <span class="empty-mark" aria-hidden="true">&#10022;</span>
+            <h3>Start with a little context</h3>
+            <p>Tell us what you are working on and what you need help figuring out.</p>
+          </div>
+        </div>
+
+        <div class="prompt-row" aria-label="Suggested messages">
+          <button class="prompt-chip" type="button">I need help registering courses</button>
+          <button class="prompt-chip" type="button">How do I plan my semester?</button>
+        </div>
+
+        <form class="message-composer" id="message-form">
+          <label class="visually-hidden" for="message-input">Write your message</label>
+          <input id="message-input" name="message" type="text" placeholder="Write a message..." autocomplete="off"
+            maxlength="1000" required>
+          <button class="send-button" type="submit" aria-label="Send message"><span
+              aria-hidden="true">&#8593;</span></button>
+        </form>
+        <p class="composer-footnote" id="message-status" aria-live="polite">Demo only · Your messages are not sent to an
+          adviser.</p>
+      </section>
+
+      <aside class="chat-aside">
+        <section class="aside-block">
+          <p class="eyebrow">MAKE IT USEFUL</p>
+          <h2>Details that help</h2>
+          <ul class="detail-list">
+            <li>Your programme and year of study</li>
+            <li>The course, form, or portal step involved</li>
+            <li>Any deadline you are working toward</li>
+          </ul>
+        </section>
+        <!-- <section class="aside-block resource-block">
+          <p class="eyebrow">QUICK RESOURCE</p>
+          <h2>Admission requirements</h2>
+          <p>Check the current entry information before you apply. Course-specific criteria can vary.</p>
+          <a class="text-link" href="admissionRequirement.html">Read requirements <span
+              aria-hidden="true">&#8594;</span></a>
+        </section> -->
+      </aside>
+    </div>
+  </main>
+
+  <script src="../js/site-nav.js"></script>
+  <script src="../js/advising-chat.js"></script>
+</body>
+
+</html>
