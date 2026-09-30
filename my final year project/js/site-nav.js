@@ -13,7 +13,7 @@ if (navigationMount) {
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="admission.html">Admission Information</a></li>
-          <li><a href="admissionRequirement.html">Admission Requirements</a></li>
+        
           <li><a href="new.html">News</a></li>
           <li><a href="signup.html">Contact</a></li>
         </ul>
