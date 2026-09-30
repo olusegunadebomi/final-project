@@ -2,7 +2,7 @@
   "redirects": [
     {
       "source": "/",
-      "destination": "/my%20final%20year%20project/html/index.html",
+      "destination": "/html/index.html",
       "permanent": false
     }
   ]
